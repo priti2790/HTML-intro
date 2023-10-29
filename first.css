@@ -1,0 +1,20 @@
+/* This is external css using element selector */
+pre{
+    color: gold;
+    font-size: 25px;
+}
+.h3-container{
+    color: blueviolet;
+    font-size: 30px;
+}
+.para-container{
+    background-color: aqua;
+    width: 400px;
+    border: 1px dashed blue;
+    color: brown;
+    text-align: center;
+}
+#h2-container{
+    border: 4px solid violet;
+    width: 400px;
+}
