@@ -2,10 +2,10 @@
  .static-value{ 
     border: 2px solid rgb(47, 0, 255); 
     top: 50px; 
-    position: static; 
+    position: sticky; 
  
 } 
-/* .abs-value{  
+ .abs-value{  
     border: 2px solid rgb(8, 8, 8); 
     top: 57px; 
     position: absolute; 
@@ -19,6 +19,7 @@
     position: relative; 
     width: 350px; 
     height: 350px; 
+    z-index: -1;
 } 
 .h{ 
     text-align: center; 
@@ -31,10 +32,10 @@
     width: 1400px; 
     background-color: antiquewhite; 
 } 
-.sticky-value{ 
-    border: 2px solid rgb(19, 19, 20); 
+/* .sticky-value{  
+    border: 2px solid rgb(19, 19, 20);
     top: 0px; 
     position: sticky; 
-    height: 30px; 
-    background-color:palevioletred ; 
+     height: 30px;  
+    background-color:palevioletred ;
 }*/
