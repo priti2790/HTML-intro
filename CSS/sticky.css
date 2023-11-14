@@ -1,0 +1,7 @@
+.sticky-value{ 
+    border: 2px solid rgb(19, 19, 20); 
+    top: 0px; 
+    position: sticky; 
+    height: 30px; 
+    background-color:palevioletred ; 
+}

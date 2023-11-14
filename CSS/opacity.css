@@ -1,0 +1,19 @@
+img{ 
+    opacity: 0.5; 
+} 
+ 
+img:hover{ 
+    opacity: 1; 
+} 
+ 
+.verticle-line{ 
+    border-left: 4px solid blueviolet; 
+    height: 500px; 
+    position: absolute; 
+    left: 410px; 
+    top: 0px; 
+} 
+.list li{ 
+    display: inline-block; 
+    list-style-type: disc; 
+}
