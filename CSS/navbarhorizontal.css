@@ -1,33 +1,21 @@
-a {
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    overflow: auto; 
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
     text-decoration: none;
 }
-.navbar{
-    background-color: cadetblue;
-    overflow: hidden;
+li a:hover {
+    background-color: white;
+    color: black;
 }
-.dropdown{
-    float: left;
-    overflow: hidden;
-}
-.dropdown-container{
-    position: absolute;
-    background-color: burlywood;
-    min-width: 114px;
-    box-shadow: 0px 8px 16px 0px brown;
-    z-index: 1;
-}
-.dropdown-container a {
-float: none;
-color: black;
-display: block;
-text-align: center;
-}
-.navbar a {
-float: left;
-padding: 5px 5px;
-}
-.dropdown .btn{ 
-    background-color: yellowgreen; 
-    border: none; 
-    padding: 4px 4px; 
-} 
