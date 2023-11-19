@@ -1,0 +1,16 @@
+ul.sidenav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 25%;
+    height: 100%;
+    background-color:azure;
+    position: fixed;
+    overflow: auto;
+}
+ul.sidenav li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    
+}
