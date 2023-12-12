@@ -2,4 +2,37 @@
     const fruits = ["Banana","Orange","Apple","Mango"];
     let size = fruits.length;
     console.log(size);
+    console.log(fruits.toString());
+    console.log(fruits.join("/"));
+    let fruits1 = fruits.pop();
+    console.log(fruits);
+    console.log(fruits.push("kiwi"));
+    console.log(fruits);
+    fruits.shift();
+    console.log(fruits);
+    fruits.unshift("lemon");
+    console.log(fruits);
+    delete fruits[0];
+    console.log(fruits);
+    let array1 = ["a","b","c"];
+    let array2 = ["d","e","f"];
+    let array3 = array1.concat(array2);
+    console.log(array3);
+    let A = ["Pune","Mumbai","Nashik"];
+    let B = A.slice(1,2);
+    console.log(B);
+    let months = ["Jan","mar","apr","may"];
+    months.splice(1,0,"feb");
+    console.log(months);
+    months.splice(4,1,"jun");
+    console.log(months);
+    // array of objects
+    let std = [
+        {name: "pooja", age: 20, city: "pune"},
+        {name: "priya", age: 22, city: "mumbai"},
+        {name: "poonam", age: 24, city: "nashik"}
+    ]
+    console.log(std[0]);
+    console.log(std[0].age);
+    console.log(std.length);
 </script>
