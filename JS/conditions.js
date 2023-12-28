@@ -78,5 +78,3 @@ let y = 20;
 if(x > 50 || y !=20 || y >10){
     console.log("true");
 }
-// ternory operator
-marks > 35 ? console.log("pass") :console.log("Fail");
