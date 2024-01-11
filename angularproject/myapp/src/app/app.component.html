@@ -1,12 +1,2 @@
-<h1>Welcome</h1>
-<h2>to my page</h2>
-<app-home></app-home>
-<input type="text" [value]="userName">
-<br>
-<button (click)="handleclick()">click me</button>
-<br>
-<p [class]="mycssclass">This paragraph class comes from my css class property</p>
-<p [class.blue]="applycssclass">This paragraph class does not apply</p><br>
-<input type="text" [(ngModel)]="username">Enter username
-<br>
-{{username}}
+
+<router-outlet></router-outlet>
