@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoutingComponent } from './routing.component';
+import { DirectiveComponent } from './directive.component';
 
-describe('RoutingComponent', () => {
-  let component: RoutingComponent;
-  let fixture: ComponentFixture<RoutingComponent>;
+describe('DirectiveComponent', () => {
+  let component: DirectiveComponent;
+  let fixture: ComponentFixture<DirectiveComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RoutingComponent]
+      declarations: [DirectiveComponent]
     });
-    fixture = TestBed.createComponent(RoutingComponent);
+    fixture = TestBed.createComponent(DirectiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
