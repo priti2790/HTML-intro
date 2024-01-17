@@ -16,4 +16,12 @@ toggle(){
 listItem=['Coffee', 'Tea','Milk','Greentea']
 // ngSwitch directive
 color='yellow';
+
+// attribute directive
+bgColorName:any='pink';
+getColor()
+{
+  return this.bgColorName;
+}
+journey:any ='owner';
 }

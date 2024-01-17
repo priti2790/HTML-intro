@@ -14,5 +14,7 @@ export class HomeComponent {
   directivecompo(){
 this.router.navigateByUrl('directive')
   }
-
+adminMod(){
+  this.router.navigateByUrl('/admin/adminLanding')
+}
 }

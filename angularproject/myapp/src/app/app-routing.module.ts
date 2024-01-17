@@ -9,7 +9,10 @@ const routes: Routes = [
   {path: "",component:HomeComponent },
   {path:"databinding",component:DatabindingComponent},
   {path:"test", component:TestComponent},
-  {path:"directive", component:DirectiveComponent}
+  {path:"directive", component:DirectiveComponent},
+  // lazy loading
+  { path : 'user', loadChildren:()=>import('./user/user.module').then(m=>m.UserModule)},
+  {path : "admin",loadChildren:()=>import('./admin/admin.module').then(mod=>mod.AdminModule)}
 ];
 
 @NgModule({

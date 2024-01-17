@@ -19,3 +19,11 @@
     <p *ngSwitchCase="color==='black'">I like {{color}}</p>
     <p *ngSwitchDefault>I dont like color</p>
 </div>
+<br>
+<!-- attribute directive -->
+<div style="color:aqua;font-size: 30px;">I like Pune</div><br>
+<div [ngStyle]="{backgroundColor: getColor()}"> I like yellow</div><br>
+<div [class.div-container2]="journey=='admin'"
+[class.div-container1]="journey=='owner'"
+[class.div-container]="journey=='user'"
+>I Like India</div>
