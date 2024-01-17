@@ -1,1 +1,14 @@
-<p>user-login works!</p>
+<div class="form-container">
+    <h2>Login Form</h2>
+    <form #loginForm="ngForm">
+        <label>User Name</label><br>
+        <input type="text" #userName="ngModel" ngModel name="uname" required><br>
+        <div *ngIf="userName?.errors?.['required'] && userName?.touched" class="error-msg">
+            User Name is required
+        </div><br>
+        <label>Password</label><br>
+        <input type="text" #pass="ngModel" ngModel name="pass" required><br>
+        <div *ngIf="pass?.errors?.['required'] && pass.touched" class="error-msg">Password is required</div><br>
+        <button (click)="login(loginForm.value)"[disabled]=!loginForm.valid>Submit</button>
+    </form>
+</div>

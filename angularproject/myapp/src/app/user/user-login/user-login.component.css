@@ -1,0 +1,14 @@
+.form-container{
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 10px;
+    position: relative;
+
+}
+.error-msg{
+    color: red;
+}
