@@ -12,3 +12,12 @@
 .error-msg{
     color: red;
 }
+.eye-icon{
+    position: relative;
+    right: 30px;
+    /* top: 20px; */
+}
+.eye-icon2{
+    position: relative;
+    right: 30px;
+}

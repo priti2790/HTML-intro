@@ -1,1 +1,31 @@
-<p>user-signup works!</p>
+<div class="form-container">
+    <form [formGroup]="signUpForm">
+    <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input type="text" matInput formControlName="fullName">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Mobile No</mat-label>
+        <input type="text" matInput formControlName="MobileNo">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Pan Card</mat-label>
+        <input type="text" matInput formControlName="pancard">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="text" matInput formControlName="Password">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input type="text" matInput formControlName="confirmPassword">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="accent" class="btn">Submit</button>
+
+    </form>
+</div>
