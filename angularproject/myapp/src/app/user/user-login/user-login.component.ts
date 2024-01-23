@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class UserLoginComponent {
   name="Poonam";
-  isShowPass = false;
+  
   login(data: any) {
     console.log(data);
     let userName = data.uName.replace(/\s+/g, ' ');
@@ -17,6 +17,7 @@ export class UserLoginComponent {
       "Password": data.password,
     };
   }
+  isShowPass = false;
   toShowPassword() {
     this.isShowPass = !this.isShowPass;
   }

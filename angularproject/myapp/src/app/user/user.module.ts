@@ -7,6 +7,8 @@ import { UserSignupComponent } from './user-signup/user-signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatIconModule} from '@angular/material/icon';
 console.log("User Module Calling...");
 
 
@@ -22,7 +24,9 @@ console.log("User Module Calling...");
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatRadioModule,
+    MatIconModule
   ]
 })
 export class UserModule { }
