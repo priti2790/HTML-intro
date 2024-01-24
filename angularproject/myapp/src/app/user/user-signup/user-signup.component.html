@@ -2,9 +2,11 @@
     <form [formGroup]="signUpForm">
         <mat-form-field class="form-Fields">
             <mat-label>Full Name</mat-label>
-            <input type="text" matInput formControlName="fullName">
+            <input type="text" matInput formControlName="fullName" >
             <mat-error *ngIf="signUpForm.get('fullName')?.errors?.['required'] && 
             signUpForm.get('fullName')?.touched">FullName is Required</mat-error>
+            <mat-error *ngIf="signUpForm.get('fullName')?.errors?.['whiteSpaceError']">
+                fullname should not include more than one space </mat-error>
         </mat-form-field>
         
         <br>
@@ -45,7 +47,10 @@
         </mat-form-field>
         <mat-error *ngIf="matched"> Password and Confirm password should match</mat-error>
         <br>
-        <button mat-raised-button color="accent" class="btn">Submit</button>
+        <input type="checkbox" formControlName="tc">I agree to terms and conditions
+        <br>
+        <button mat-raised-button color="accent" class="btn" (click)="submit()" 
+        [disabled]="!signUpForm.valid">Submit</button>
 
     </form>
 </div>

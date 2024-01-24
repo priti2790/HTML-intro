@@ -14,12 +14,13 @@ export class UserSignupComponent {
   }
   formDetails(){
     this.signUpForm = this.formBuilder.group({
-      fullName:['', Validators.required],
-      MobileNo:['null', [Validators.maxLength(10), Validators.pattern("^[0-9]*$")]],
+      fullName:['', [Validators.required, this.whiteSpaceRemoveValidator]],
+      MobileNo:['', [Validators.maxLength (10), Validators.pattern("^[0-9]*$")]],
       gender:[],
       pancard:[],
       Password:[],
-      confirmPassword:[]  
+      confirmPassword:[],  
+      tc:['', [Validators.requiredTrue]]
     })
   }
   visible = false;
@@ -37,5 +38,14 @@ export class UserSignupComponent {
       else{
         this.matched = true;
       }
+    }
+    submit(){
+      console.log('this.signUpForm.value',this.signUpForm.value);
+    }
+    //'/\s{1,}/g'
+    whiteSpaceRemoveValidator(inputboxvalue:any){
+      console.log('inp val',inputboxvalue);
+      let spaceinclude = inputboxvalue?.value?.includes('  ')
+      return spaceinclude ? {'whiteSpaceError':true} :null
     }
   }

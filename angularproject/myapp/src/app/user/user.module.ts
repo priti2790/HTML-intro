@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+import { UserSuccessComponent } from './user-success/user-success.component';
 console.log("User Module Calling...");
 
 
@@ -17,6 +18,7 @@ console.log("User Module Calling...");
   declarations: [
     UserLoginComponent,
     UserSignupComponent,
+    UserSuccessComponent,
   ],
   imports: [
     CommonModule,
