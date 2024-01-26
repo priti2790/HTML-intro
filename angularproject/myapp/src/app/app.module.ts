@@ -9,6 +9,8 @@ import { TestComponent } from './test/test.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     DatabindingComponent,
     TestComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
