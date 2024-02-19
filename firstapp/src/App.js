@@ -1,9 +1,13 @@
-
+import React from 'react';
 import './App.css';
-
+import navbar 
 function App() {
   return (
-   <div class="navbar">
+    <div>
+      <navbar> </navbar>
+      
+      
+   {/* <div class="navbar">
     <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
@@ -14,6 +18,7 @@ function App() {
     
   }
   <button id="black"class="dark">dark</button>
+   </div> */}
    </div>
   );
 }
