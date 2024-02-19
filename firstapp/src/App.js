@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import navbar 
+
 function App() {
   return (
     <div>
-      <navbar> </navbar>
-      
+
+    
       
    {/* <div class="navbar">
     <a href="#home">Home</a>
@@ -18,7 +18,7 @@ function App() {
     
   }
   <button id="black"class="dark">dark</button>
-   </div> */}
+   </div>  */}
    </div>
   );
 }
