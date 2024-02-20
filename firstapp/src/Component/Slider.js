@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Check() {
+export default function Slider() {
   return (
     <div>
-      <div className='nav'>
-
+        <div className='slider'>
+      
       </div>
     </div>
   )

@@ -1,25 +1,17 @@
 import React from 'react';
 import './App.css';
+// import Topnav from './Component/Topnav';
+// import Slider from './Component/Slider';
+import Navigation from './Component/Navigation';
+
 
 function App() {
   return (
     <div>
-
-    
-      
-   {/* <div class="navbar">
-    <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a href="#services">Services</a>
-  <button id="cyan"class="light">light</button>
-  const button = document.getElementById('cyan');
-  button.addEventListener('click', function() {
-    
-  }
-  <button id="black"class="dark">dark</button>
-   </div>  */}
-   </div>
+      {/* <Topnav></Topnav>
+      <Slider></Slider> */}
+      <Navigation></Navigation>
+    </div>
   );
 }
 
